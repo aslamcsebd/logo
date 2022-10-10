@@ -1,11 +1,15 @@
-<div class="topNav mx-4 p-1">
-   <span>
-      <i class="fa-regular fa-envelope p-2"></i>
-      logomillions@gmail.com
-   </span>
-   <span class="float-end">
-      Order by Whatsapp : <i class="fa-brands fa-whatsapp"></i> 01876638414
-   </span>
+<div class="topNav row justify-content-between">
+   <div class="col-md-4">
+      <span class="ps-4">
+         <i class="fa-regular fa-envelope p-2 rounded-circle my-1"></i>
+         logomillions@gmail.com
+      </span>
+   </div>
+   <div class="col-md-4">
+      <span class="rounded-5 px-2 py-1 my-1 me-4 float-end">
+         Order by Whatsapp : <i class="fa-brands fa-whatsapp"></i> 01876638414
+      </span>
+   </div>
 </div>
 
 <nav class="navbar navbar-expand-lg bg-light">   
