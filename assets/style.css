@@ -1,7 +1,6 @@
-.topNav { background-color: #d1d1d1; }
+
+.topNav { background-color: #d1d1d1; margin: unset !important;}
 .topNav .rounded-circle, .topNav .rounded-5{ background-color: orange; }
 
-@media only screen and (max-width: 768px) {
-    .topNav div span{ text-align: center !important; }
-    .topNav .float-end{ float: none !important; }
-}
+.navbar{ background-color: lavender;}
+.navbar-collapse .nav-item, .navbar-collapse .shopping{ margin: 5px !important;}
