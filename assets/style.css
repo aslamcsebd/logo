@@ -1,6 +1,8 @@
+.top2{ background-color: #F6F6F6; height: 20px;}
 
-.topNav { background-color: #d1d1d1; margin: unset !important;}
+.topNav { background-color: #E4E4E4; margin: unset !important;}
 .topNav .rounded-circle, .topNav .rounded-5{ background-color: orange; }
 
-.navbar{ background-color: lavender;}
+.navbar{ background-color: #F6F6F6;}
+.navbar-collapse .nav-item a{margin: 0 20px; padding: 0.2rem 0.5rem; font-size: 20px; text-transform: uppercase; font-weight: bold; box-shadow: 1px 1px 10px 3px grey;}
 .navbar-collapse .nav-item, .navbar-collapse .shopping{ margin: 5px !important;}
