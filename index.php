@@ -15,9 +15,49 @@
       <!-- navbar -->
       <?php include 'include/navbar.php';?>
 
+      <div>
+         <img src="images/home.jpeg" alt="" width="100%" height="500">
+      </div>
 
+      <div class="centered">
+         <h2 class="fw-bold">Logo design by experts</h2>
 
+         <table class="my-4">           
+            <tbody>
+               <tr>
+                  <td>
+                     <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" checked disabled>
+                        <label>Individual design</label>
+                     </div>
+                  </td>
+                  <td>
+                     <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" checked disabled>
+                        <label>Unlimited fixes</label>
+                     </div>
+                  </td>
+               </tr>
+             
+               <tr>
+                  <td>
+                     <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" checked disabled>
+                        <label>Satisfaction Guarantee</label>
+                     </div>
+                  </td>
+                  <td>
+                     <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" checked disabled>
+                        <label>Backup free</label>
+                     </div>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
 
+         <a class="btn btn-success rounded-5 fs-4 fw-bold text-light orderNow" href="#">ORDER NOW</a>
+      </div>
 
 
 

@@ -5,4 +5,24 @@
 
 .navbar{ background-color: #F6F6F6;}
 .navbar-collapse .nav-item a{margin: 0 20px; padding: 0.2rem 0.5rem; font-size: 20px; text-transform: uppercase; font-weight: bold; box-shadow: 1px 1px 10px 3px grey;}
-.navbar-collapse .nav-item, .navbar-collapse .shopping{ margin: 5px !important;}
+.navbar-collapse .nav-item{ margin: 5px !important;}
+
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    /* background: darkgrey; */
+	/* background-color: rgb(152 151 151 / 25%); */
+    padding: 7px;
+	/* color: #fff; */
+	border-radius: 10px;
+}
+
+.centered .form-check-input:checked {
+    background-color: green !important;
+    border-color: green !important;
+}
+
+.centered .orderNow{ background-color: lime; }

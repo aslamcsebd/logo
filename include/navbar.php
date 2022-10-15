@@ -24,17 +24,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
          <ul class="navbar-nav m-auto mb-lg-0">
             <li class="nav-item">
-               <a class="btn btn-light" href="#">Logo design</a>
+               <a class="btn btn-light btn-lg" href="#">Logo design</a>
             </li>    
             <li class="nav-item">
-               <a class="btn btn-light" href="#">Service</a>
+               <a class="btn btn-light btn-lg" href="#">Service</a>
             </li>
             <li class="nav-item">
-               <a class="btn btn-light" href="#">About us</a>
+               <a class="btn btn-light btn-lg" href="#">About us</a>
             </li>    
          </ul>
         
-         <a class="btn btn-primary shopping" href="#">
+         <a class="btn btn-primary shopping me-4" href="#">
             <i class="fa-solid fa-cart-shopping fs-5"></i>
             ORDER NOW
          </a>        
