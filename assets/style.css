@@ -26,3 +26,4 @@
 }
 
 .centered .orderNow{ background-color: lime; }
+.centered .orderNow:hover{ background-color: brown; }
