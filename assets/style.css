@@ -25,5 +25,5 @@
     border-color: green !important;
 }
 
-.centered .orderNow{ background-color: lime; }
+.centered .z{ background-color: lime; }
 .centered .orderNow:hover{ background-color: brown; }
