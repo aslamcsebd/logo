@@ -80,6 +80,10 @@
             box-shadow: 0 0 5px 2px rgb(0 0 0 / 50%);
             border-radius: 5px;
         }       
+
+        .process h4 span{ border-bottom: 2px solid #000; width:100px; }
+        .process .title{ margin-bottom: 50px; }
+        
     </style>
     
     <body>
@@ -212,6 +216,38 @@
             </div>
         </section>
 
+        <section class="process">
+            <div class="text-center title">
+                <h4 class="my-3">
+                    <span>THE DESIGN PROCESS</span>
+                </h4>       
+                <h3>
+                    THE LOGO DEVELOPMENT
+                </h3>     
+            </div>
+            
+            <div class="row justify-content-center m-0">
+                <?php 
+                    $process = [
+                        '<i class="fa-solid fa-5x fa-pen-nib"></i>',
+                        '<i class="fa-solid fa-5x fa-plane-departure"></i>',
+                        '<i class="fa-solid fa-5x fa-desktop"></i>',
+                        '<i class="fa-solid fa-5x fa-object-ungroup"></i>',
+                        '<i class="fa-solid fa-5x fa-pen-to-square"></i>'
+                    ];?>
+
+                    <?php
+                        foreach($process as $key => $pro) { ?>
+                            <div class="col mx-2">
+                                <div class="text-center">
+                                    <p><?=$pro?></p>
+                                    <h5 class=""><?=$key?>. Title name</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non expedita dolore ipsum similique qui, facilis quae tempora itaque dolores consectetur sequi nam. Expedita, eligendi. Quidem necessitatibus corporis fugiat suscipit nobis!</p>
+                                </div>
+                            </div>                            
+                    <?php } ?>                
+            </div>        
+        </section>
 
         <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
         <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
