@@ -16,20 +16,11 @@
     </head>
 
     <style type="text/css">
-        .slider {
-            width: 95%;
-            margin: 10px auto;
-        }
-        .slick-slide {
-            margin: 0px 5px;
-        }
-        .slick-slide img {
-            width: 100%;
-        }
+        .slider { width: 95%; margin: 10px auto; }
+        .slick-slide { margin: 0px 5px; }
+        .slick-slide img { width: 100%; }
         .slick-prev:before,
-        .slick-next:before {
-            color: black;
-        }
+        .slick-next:before { color: black; }
         .brand .slick-arrow{display: none !important;}
         .brand img{ height: 100px !important; }
         
@@ -83,11 +74,15 @@
 
         .process h4 span{ border-bottom: 2px solid #000; width:100px; }
         .process .title{ margin-bottom: 50px; }
+
+        .portfolio h4 span{ border-bottom: 2px solid #000; width:100px; }
+        .portfolio .title{ margin-bottom: 50px; }
+
+        .portfolio2 img{ width: 250px; height: 180px !important; margin: auto;}
         
     </style>
     
     <body>
-
         <!-- navbar -->
         <?php include 'include/navbar.php';?>
 
@@ -150,7 +145,7 @@
         </p>
         <br>
 
-        <section class="autoplay slider  col-sm-12">
+        <section class="autoplay slider col-sm-12">
             <?php 
                 for($i=1; $i<=10; $i++){ ?>
                     <div class="col-sm-12">
@@ -249,6 +244,112 @@
             </div>        
         </section>
 
+        <style>
+            .satisfaction{
+                position: relative;    
+            }
+
+            .satisfaction .text{
+                position: absolute;
+                z-index: 999;
+                margin: 0 auto;
+
+                text-align: left;
+                top: 50%;
+                left: 70%;
+                right: 0;        
+                transform: translate(-50%, -50%);           
+              
+                /* background: rgba(0, 0, 0, 0.8); */
+                font-family: Arial,sans-serif;
+                color: #000;
+                width: 45%;
+            }
+        </style>
+
+        <div class="satisfaction">
+            <img src="images/home.jpeg" alt="" style="width:100%; height:600px;">
+            <div class="text">
+                <h4 class="fw-bold text-center">YOUR SATISFACTION <br> GUARANTEE</h4>
+                <p>
+                    We're happy when you are too. So that you don't have to take any risks with your
+                    purchase, we offer you our satisfaction guarantee.
+                    We will revise the design you have chosen until you are completely satisfied. All
+                    correction loops up to the completion of the logo are included in the price. We do
+                    not charge extra for correction loops.
+                    So you can be sure that the logo will be finished exactly how you want it. If you
+                    don't like any of the first drafts we developed and you haven't decided on a draft
+                    for further processing, you will even get your money back within the first 30 days.
+                </p>
+            </div>
+        </div>
+
+        <section class="portfolio">
+            <div class="text-center title">
+                <h4 class="my-3">
+                    <span>PORTFOLIO</span>
+                </h4>       
+                <h3>
+                    OUR REFERENCES
+                </h3>     
+            </div>
+
+            <section class="portfolio2 slider col-sm-12">
+            <?php 
+                for($i=1; $i<=10; $i++){ ?>
+                    <div class="col-sm-12">
+                        <img src="images/brand/brand (<?=$i?>).jpeg">
+                        <p class="text-center fw-bold mt-2">Logo design</p>
+                    </div>
+            <?php } ?> 
+        </section>
+
+        <style>
+            .startToday{
+                position: relative;    
+            }
+
+            .startToday .text{
+                position: absolute;
+                z-index: 999;
+                margin: 0 auto;
+
+                text-align: left;
+                top: 50%;
+                left: 0%;
+                right: 0;        
+                transform: translate(-50%, -50%);           
+              
+                /* background: rgba(0, 0, 0, 0.8); */
+                font-family: Arial,sans-serif;
+                color: #000;
+                width: 40%;
+            }
+        </style>
+
+
+        <div class="startToday">
+            <img src="images/home.jpeg" alt="" style="width:100%; height:600px;">
+            <div class="text">
+                <small>START TODAY</small>
+                <h4 class="fw-bold">Let't create your design</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis doloremque quos sint iure, voluptas natus ratione dolore quaerat enim voluptates doloribus in obcaecati assumenda? Praesentium doloribus aut quod excepturi ipsum?
+                </p>
+                <a class="btn btn-success rounded-5 fs-5 fw-bold text-light orderNow" href="#">ORDER NOW</a>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
         <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
         <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -268,7 +369,13 @@
                     slidesToShow: 4,
                     slidesToScroll: 1,
                     autoplay: true,
-                });        
+                });    
+                
+                $('.portfolio2').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                });   
             });
         </script>   
    </body>
