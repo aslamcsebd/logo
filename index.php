@@ -6,8 +6,10 @@
         <!-- <meta http-equiv="refresh" content="5"> -->
         <title>Home page</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
-
+        <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
+        
         <link rel="stylesheet" type="text/css" href="./slick/slick.css">
         <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
       
@@ -93,7 +95,7 @@
         <div class="centered">
             <h2 class="fw-bold">Logo design by experts</h2>
 
-            <table class="my-4">           
+            <table class="my-4">
                 <tbody>
                 <tr>
                     <td>
@@ -154,7 +156,7 @@
             <?php } ?> 
         </section>
 
-        <div class="professional">
+        <section class="professional">
             <ul>
                <li>Are you starting a company and need a logo?</li>
                <li>Have you been using the same logo for years?</li>
@@ -163,7 +165,7 @@
                <li>for all conceivable forms of use.</li>
                <li><b>More than 15,000 satisfied customers already trust our agency.</b></li>
             </ul>
-        </div>
+        </section>
 
         <section class="package">
             <h1 class="text-center mb-4">
@@ -236,7 +238,7 @@
                             <div class="col mx-2">
                                 <div class="text-center">
                                     <p><?=$pro?></p>
-                                    <h5 class=""><?=$key?>. Title name</h5>
+                                    <h5 class=""><?=$key+1?>. Title name</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non expedita dolore ipsum similique qui, facilis quae tempora itaque dolores consectetur sequi nam. Expedita, eligendi. Quidem necessitatibus corporis fugiat suscipit nobis!</p>
                                 </div>
                             </div>                            
@@ -245,44 +247,33 @@
         </section>
 
         <style>
-            .satisfaction{
-                position: relative;    
-            }
-
-            .satisfaction .text{
-                position: absolute;
-                z-index: 999;
-                margin: 0 auto;
-
-                text-align: left;
-                top: 50%;
-                left: 70%;
-                right: 0;        
-                transform: translate(-50%, -50%);           
-              
-                /* background: rgba(0, 0, 0, 0.8); */
-                font-family: Arial,sans-serif;
-                color: #000;
-                width: 45%;
-            }
+            .satisfaction{padding: 20px 0;}
         </style>
 
-        <div class="satisfaction">
-            <img src="images/home.jpeg" alt="" style="width:100%; height:600px;">
-            <div class="text">
-                <h4 class="fw-bold text-center">YOUR SATISFACTION <br> GUARANTEE</h4>
-                <p>
-                    We're happy when you are too. So that you don't have to take any risks with your
-                    purchase, we offer you our satisfaction guarantee.
-                    We will revise the design you have chosen until you are completely satisfied. All
-                    correction loops up to the completion of the logo are included in the price. We do
-                    not charge extra for correction loops.
-                    So you can be sure that the logo will be finished exactly how you want it. If you
-                    don't like any of the first drafts we developed and you haven't decided on a draft
-                    for further processing, you will even get your money back within the first 30 days.
-                </p>
+        <section class="satisfaction">
+            <div class="row justify-content-center m-0">
+                <div class="col-md-6 col-sm-12">
+                    <div>
+                        <img src="images/satisfaction.png" alt="" style="width:80%; height:400px;">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="m-4">
+                        <h4 class="fw-bold text-center">YOUR SATISFACTION <br> GUARANTEE</h4>
+                        <p>
+                            We're happy when you are too. So that you don't have to take any risks with your
+                            purchase, we offer you our satisfaction guarantee.
+                            We will revise the design you have chosen until you are completely satisfied. All
+                            correction loops up to the completion of the logo are included in the price. We do
+                            not charge extra for correction loops.
+                            So you can be sure that the logo will be finished exactly how you want it. If you
+                            don't like any of the first drafts we developed and you haven't decided on a draft
+                            for further processing, you will even get your money back within the first 30 days.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
         <section class="portfolio">
             <div class="text-center title">
@@ -305,50 +296,190 @@
         </section>
 
         <style>
-            .startToday{
-                position: relative;    
-            }
-
-            .startToday .text{
-                position: absolute;
-                z-index: 999;
-                margin: 0 auto;
-
-                text-align: left;
-                top: 50%;
-                left: 0%;
-                right: 0;        
-                transform: translate(-50%, -50%);           
-              
-                /* background: rgba(0, 0, 0, 0.8); */
-                font-family: Arial,sans-serif;
-                color: #000;
-                width: 40%;
-            }
+            .startToday .row{background-color: mediumseagreen;}
         </style>
 
-
-        <div class="startToday">
-            <img src="images/home.jpeg" alt="" style="width:100%; height:600px;">
-            <div class="text">
-                <small>START TODAY</small>
-                <h4 class="fw-bold">Let't create your design</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis doloremque quos sint iure, voluptas natus ratione dolore quaerat enim voluptates doloribus in obcaecati assumenda? Praesentium doloribus aut quod excepturi ipsum?
-                </p>
-                <a class="btn btn-success rounded-5 fs-5 fw-bold text-light orderNow" href="#">ORDER NOW</a>
-
+        <section class="startToday">
+            <div class="row justify-content-center m-0">
+                <div class="col-md-6 col-sm-12 text-white">
+                    <div style="margin: 70px;">
+                        <small>START TODAY</small>
+                        <h4 class="fw-bold">Let's create your design</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis doloremque quos sint iure, voluptas natus ratione dolore quaerat enim voluptates doloribus in obcaecati assumenda? Praesentium doloribus aut quod excepturi ipsum?
+                        </p>
+                        <a class="btn btn-success rounded-5 fs-5 fw-bold bg-light text-success orderNow" href="#">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div>
+                        <img src="images/startToday.png" alt="" style="width:80%; height:400px;">
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
+        <style>
+            .requestDesign{padding: 20px 0;}
+            .requestDesign .orderNow{width: 100%;}
+        </style>
 
+        <section class="requestDesign mt-4">
+            <div class="row justify-content-center m-0">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <form action="#">
+                       <h3 class="mx-4">
+                           <b>Request a design</b>
+                       </h3>
+                        <div class="row m-3">                  
+                            <div class="form-group col-6">
+                                <label>First name*</label>
+                                <input class="form-control" name="" value="" type="text" placeholder="" readonly>
+                            </div>
+                            <div class="form-group col-6">
+                                <label>Surname*</label>
+                                <input class="form-control" name="" value="" type="text" placeholder="" readonly>
+                            </div>
+                            <div class="form-group col-6 my-2">
+                                <label>E-mail*</label>
+                                <input class="form-control" name="" value="" type="email" placeholder="" readonly>
+                            </div>
+                            <div class="form-group col-6 my-2">
+                                <label>Phone*</label>
+                                <input class="form-control" name="" value="" type="text" placeholder="" readonly>
+                            </div>
+                            <div class="form-group col-6">
+                                <label>News*</label>
+                                <textarea class="form-control" rows="2" name="" value="" type="text" placeholder="" readonly></textarea>
+                            </div>
+                            <div class="form-group col-6">
+                                <label>Here you can attach files</label>
+                                <input class="form-control" style="border: 1px dashed green; padding: 18px 20px;" name="" value="" type="file" placeholder="" readonly>
+                            </div>
+                           <div class="form-group col-6 my-4 text-center">
+                              <a class="btn btn-success rounded-5 fs-6 fw-bold text-light orderNow" href="#">ORDER NOW</a>
+                           </div>
+                        </div>
+                    </form>
+                </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 px-4">
+                  <h3>
+                        <b>We develop the design you need</b>
+                  </h3>
+                  <div class="mx-3">
+                        <div class="form-check">
+                           <input class="form-check-input bg-success fs-4" type="checkbox" checked disabled>
+                           <label class="text-success fs-5">Professional design</label>
+                        </div>
+                        <div class="form-check my-2">
+                           <input class="form-check-input bg-success fs-4" type="checkbox" checked disabled>
+                           <label class="text-success fs-5">Experienced graphic design</label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input bg-success fs-4" type="checkbox" checked disabled>
+                           <label class="text-success fs-5">Cheap prices</label>
+                        </div>
+                  </div>
+               </div>
+            </div>
+        </section>
 
+        <style>
+            .business{padding: 20px 0;}
+        </style>
 
+        <section class="business">
+            <div class="text-center title">
+                <h4 class="my-3">
+                    BUSINESS CARDS, LETTERHEAD, FLYERS, <br>
+                    LEAFLETS AND BROCHURES FROM PROFESSIONALS
+                </h4>     
+            </div>
+            <div class="row justify-content-center m-0">
+                <div class="col-md-6 col-sm-12">
+                    <div>
+                        <img src="images/startToday.png" alt="" style="width:80%; height:400px;">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="m-4">
+                        <p>
+                            Would you like a business card, letterhead, flyer, leaflet or brochure to be
+                            developed? Despite the advent of digital media, print design is still an integral
+                            part of daily advertising and should always be part of a successful marketing
+                            mix. A quality business card, a professional flyer or a compelling brochure will
+                            have a very lasting impact on your potential customers that is difficult to achieve
+                            online. <br><br>
+                            We create corresponding designs for many purposes. More than 15,000
+                            satisfied customers already trust our agency. We will create an individual,
+                            perfectly tailored design for you at a reasonable price.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <style>
+            .faq h1 span{ border-bottom: 2px solid #000; }
+        </style>
 
+        <section class="faq">
+            <div class="text-center title">
+                <h1 class="my-3">
+                    <span>FAQ</span>
+                </h1>    
+            </div>
 
+            <section class="faq2 row m-4">
+                <?php 
+                    for($i=1; $i<=10; $i++){ ?>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <h5>
+                                <i class="fa-solid fa-circle-dot"></i>&nbsp;
+                                What is the exact flow of the design process?
+                            </h5>
+                            <p>
+                                Yes, you are welcome to do so. You can send us the missing information as soon
+                                as you have it. We then add these to the respective draft. This gives you the
+                                opportunity to order an inexpensive package (e.g. logo, business card and
+                                stationery) even if you do not yet have the data for the business card and
+                                stationery.
+                            </p>   
+                        </div>
+                <?php } ?>
+            </section>
+        </section>
 
+        <style>
+            .contactUs .row{background-color: limegreen;}
+        </style>
 
+        <section class="contactUs">
+            <div class="text-center pb-2">
+                <h1>
+                    <span class="fw-bold">Contact Us</span>
+                </h1>    
+                <small class="text-secondary">Sample text. Click to select the text box. Click again or double <br> click to start editing the text.</small>
+           
+            </div>
+            <div class="row justify-content-center m-0 py-4">
+                <div class="col-md-2 col-xs-12 text-center">
+                    <i class="fa-solid fa-location-dot fa-2x"></i>
+                    <h6 class="mt-2 mb-3 fs-5 text-success">ADDRESS</h6>
+                    <p>27 13 Lowe Haven</p>
+                </div>
+                <div class="col-md-2 col-xs-12 text-center">
+                    <i class="fa-solid fa-mobile-screen fa-2x"></i>
+                    <h6 class="mt-2 mb-3 fs-5 text-success">PHONE</h6>
+                    <p>111 343 43 43</p>
+                </div>
+                <div class="col-md-2 col-xs-12 text-center">
+                    <i class="fa-regular fa-envelope fa-2x"></i>
+                    <h6 class="mt-2 mb-3 fs-5 text-success">EMAIL</h6>
+                    <p>business@info.com</p>
+                </div>
+            </div>            
+        </section>
 
         <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
         <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
