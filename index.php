@@ -17,119 +17,51 @@
         <link rel="stylesheet" type="text/css" href="assets/responsive.css">
     </head>
 
-    <style type="text/css">
-        .slider { width: 95%; margin: 10px auto; }
-        .slick-slide { margin: 0px 5px; }
-        .slick-slide img { width: 100%; }
-        .slick-prev:before,
-        .slick-next:before { color: black; }
-        .brand .slick-arrow{display: none !important;}
-        .brand img{ height: 100px !important; }
-        
-        .autoplay img{ width: 220px; height: 220px !important; border-radius: 25px; margin: auto;}
-        .slick-dots {display: none !important;}
-
-        /* WE DEVELOP YOUR PROFESSIONAL LOGO */                
-        .hr-lines{
-            font-size: 1.5em;
-            position: relative;
-            max-width: 400px;
-            margin: 20px auto;
-            text-align: center;
-            word-spacing: 5px;   
-        }
-
-        .hr-lines:before{
-            content:"";
-            height: 1.5px;
-            width: 155px;
-            background: red;
-            display: block;
-            position: absolute;
-            top: 150%;
-            left: 0;
-        }
-
-        .hr-lines:after{
-            content:" ";
-            height: 1.5px;
-            width: 175px;
-            background: red;
-            display: block;
-            position: absolute;
-            top: 50%;
-            right: 0;
-        }
-
-        /* professional */
-        .professional ul li{ list-style: none; }
-        .professional ul{ margin: 2em; font-size: 20px; font-weight: 400;}
-
-        .package h1 b{ border-bottom: 2px solid #000; width:50px; }
-        .package ul li{ list-style: none; }    
-        .package .thumbnail {
-            padding: 10px;
-            -webkit-box-shadow: 0 0 5px 2px rgb(0 0 0 / 50%);
-            box-shadow: 0 0 5px 2px rgb(0 0 0 / 50%);
-            border-radius: 5px;
-        }       
-
-        .process h4 span{ border-bottom: 2px solid #000; width:100px; }
-        .process .title{ margin-bottom: 50px; }
-
-        .portfolio h4 span{ border-bottom: 2px solid #000; width:100px; }
-        .portfolio .title{ margin-bottom: 50px; }
-
-        .portfolio2 img{ width: 250px; height: 180px !important; margin: auto;}
-        
-    </style>
-    
     <body>
         <!-- navbar -->
         <?php include 'include/navbar.php';?>
 
-        <div>
-            <img src="images/home.jpeg" alt="" width="100%" height="500">
-        </div>
+        <div class="box">
+            <img src="images/home.jpeg" alt="" width="100%" height="500">       
+            <div class="text">
+                <h2 class="fw-bold">Logo design by experts</h2>
 
-        <div class="centered">
-            <h2 class="fw-bold">Logo design by experts</h2>
+                <table class="my-4">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" checked disabled>
+                                <label>Individual design</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" checked disabled>
+                                <label>Unlimited fixes</label>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" checked disabled>
+                                <label>Satisfaction Guarantee</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" checked disabled>
+                                <label>Backup free</label>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
 
-            <table class="my-4">
-                <tbody>
-                <tr>
-                    <td>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" checked disabled>
-                            <label>Individual design</label>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" checked disabled>
-                            <label>Unlimited fixes</label>
-                        </div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" checked disabled>
-                            <label>Satisfaction Guarantee</label>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" checked disabled>
-                            <label>Backup free</label>
-                        </div>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
-            <a class="btn btn-success rounded-5 fs-4 fw-bold text-light orderNow" href="#">ORDER NOW</a>
+                <a class="btn btn-success rounded-5 fs-4 fw-bold text-light orderNow" href="#">ORDER NOW</a>
+            </div>
         </div>
 
         <section class="brand slider">
@@ -147,7 +79,7 @@
         </p>
         <br>
 
-        <section class="autoplay slider col-sm-12">
+        <section class="autoplay slider">
             <?php 
                 for($i=1; $i<=10; $i++){ ?>
                     <div class="col-sm-12">
@@ -235,32 +167,28 @@
 
                     <?php
                         foreach($process as $key => $pro) { ?>
-                            <div class="col mx-2">
+                            <div class="col-sm-2 mx-2 col-xs-12">
                                 <div class="text-center">
                                     <p><?=$pro?></p>
-                                    <h5 class=""><?=$key+1?>. Title name</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non expedita dolore ipsum similique qui, facilis quae tempora itaque dolores consectetur sequi nam. Expedita, eligendi. Quidem necessitatibus corporis fugiat suscipit nobis!</p>
+                                    <h5 class="">
+                                        <?=$key+1?>. Title name
+                                    </h5>
+                                    <p class="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non expedita dolore ipsum similique qui, facilis quae tempora itaque dolores consectetur sequi nam. Expedita, eligendi. Quidem necessitatibus corporis fugiat suscipit nobis!</p>
                                 </div>
                             </div>                            
                     <?php } ?>                
             </div>        
         </section>
 
-        <style>
-            .satisfaction{padding: 20px 0;}
-        </style>
-
         <section class="satisfaction">
             <div class="row justify-content-center m-0">
                 <div class="col-md-6 col-sm-12">
-                    <div>
-                        <img src="images/satisfaction.png" alt="" style="width:80%; height:400px;">
-                    </div>
+                    <img src="images/satisfaction.png" alt="">                   
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="m-4">
                         <h4 class="fw-bold text-center">YOUR SATISFACTION <br> GUARANTEE</h4>
-                        <p>
+                        <p class="justify">
                             We're happy when you are too. So that you don't have to take any risks with your
                             purchase, we offer you our satisfaction guarantee.
                             We will revise the design you have chosen until you are completely satisfied. All
@@ -294,11 +222,7 @@
                     </div>
             <?php } ?> 
         </section>
-
-        <style>
-            .startToday .row{background-color: mediumseagreen;}
-        </style>
-
+       
         <section class="startToday">
             <div class="row justify-content-center m-0">
                 <div class="col-md-6 col-sm-12 text-white">
@@ -312,18 +236,11 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <div>
-                        <img src="images/startToday.png" alt="" style="width:80%; height:400px;">
-                    </div>
+                    <img src="images/startToday.png" alt="">
                 </div>
             </div>
         </section>
-
-        <style>
-            .requestDesign{padding: 20px 0;}
-            .requestDesign .orderNow{width: 100%;}
-        </style>
-
+       
         <section class="requestDesign mt-4">
             <div class="row justify-content-center m-0">
                 <div class="col-md-6 col-sm-12 col-xs-12">
@@ -383,11 +300,7 @@
                </div>
             </div>
         </section>
-
-        <style>
-            .business{padding: 20px 0;}
-        </style>
-
+      
         <section class="business">
             <div class="text-center title">
                 <h4 class="my-3">
@@ -397,9 +310,7 @@
             </div>
             <div class="row justify-content-center m-0">
                 <div class="col-md-6 col-sm-12">
-                    <div>
-                        <img src="images/startToday.png" alt="" style="width:80%; height:400px;">
-                    </div>
+                    <img src="images/startToday.png" alt="">
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="m-4">
@@ -418,11 +329,7 @@
                 </div>
             </div>
         </section>
-
-        <style>
-            .faq h1 span{ border-bottom: 2px solid #000; }
-        </style>
-
+      
         <section class="faq">
             <div class="text-center title">
                 <h1 class="my-3">
@@ -449,11 +356,7 @@
                 <?php } ?>
             </section>
         </section>
-
-        <style>
-            .contactUs .row{background-color: limegreen;}
-        </style>
-
+      
         <section class="contactUs">
             <div class="text-center pb-2">
                 <h1>
@@ -485,28 +388,120 @@
         <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript">
-            $(document).on('ready', function() {            
-                $(".brand").slick({
-                    dots: true,                    
+            $(document).on('ready', function() {   
+
+                $('.brand').slick({
+                    dots: true,
                     infinite: true,
+                    // speed: 300,
                     centerMode: true,
                     slidesToShow: 5,
                     slidesToScroll: 3,
                     autoplay: true,
                     autoplaySpeed: 2000,
-                });   
+                    responsive: [
+                        {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                        },
+                        {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                        },
+                        {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                        }
+                        // You can unslick at a given breakpoint now by adding:
+                        // settings: "unslick"
+                        // instead of a settings object
+                    ]
+                });
 
                 $('.autoplay').slick({
+                    dots: true,
+                    infinite: false,
+                    speed: 300,
                     slidesToShow: 4,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                });    
-                
+                    slidesToScroll: 4,
+                    responsive: [
+                        {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                        },
+                        {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                        },
+                        {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                        }
+                        // You can unslick at a given breakpoint now by adding:
+                        // settings: "unslick"
+                        // instead of a settings object
+                    ]
+                });
+
+
                 $('.portfolio2').slick({
+                    dots: true,
+                    infinite: false,
+                    speed: 300,
                     slidesToShow: 3,
                     slidesToScroll: 1,
-                    autoplay: true,
-                });   
+                    responsive: [
+                        {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                        },
+                        {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                        },
+                        {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                        }
+                        // You can unslick at a given breakpoint now by adding:
+                        // settings: "unslick"
+                        // instead of a settings object
+                    ]
+                });
+
             });
         </script>   
    </body>
