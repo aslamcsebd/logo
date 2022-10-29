@@ -72,79 +72,81 @@
                     </div>
             <?php } ?>
         </section>
+
+        <div class="px-4">
+            <p class="hr-lines">
+                <span class="float-start">WE DEVELOP YOUR</span> <br>
+                <span class="float-end">PROFESSIONAL LOGO</span>
+            </p>
+            <br>
         
-        <p class="hr-lines">
-            <span class="float-start">WE DEVELOP YOUR</span> <br>
-            <span class="float-end">PROFESSIONAL LOGO</span>
-        </p>
-        <br>
-
-        <section class="autoplay slider">
-            <?php 
-                for($i=1; $i<=10; $i++){ ?>
-                    <div class="col-sm-12">
-                        <img src="images/brand/brand (<?=$i?>).jpeg">
-                    </div>
-            <?php } ?> 
-        </section>
-
-        <section class="professional">
-            <ul>
-               <li>Are you starting a company and need a logo?</li>
-               <li>Have you been using the same logo for years?</li>
-               <li>Do you also need the design of your business card, letterhead or a flyer?</li>
-               <li>We are logo experts and develop logos and business stationery</li>
-               <li>for all conceivable forms of use.</li>
-               <li><b>More than 15,000 satisfied customers already trust our agency.</b></li>
-            </ul>
-        </section>
-
-        <section class="package">
-            <h1 class="text-center mb-4">
-                <b>OUR PACKAGE</b>
-            </h1>
-
-            <div class="row justify-content-center m-0 mb-4">
-                <?php for($i=1; $i<=3; $i++){ ?>
-                    <div class="col-md-3 col-sm-12 rounded-5 m-4 thumbnail">
-                        <div class="text-center mb-4">
-                            <p class="fw-bold text-success fs-4">Logo design</p>
-                            <i class="fa-solid fa-euro-sign fa-2x">&nbsp; 149</i>
-                            <p class="text-secondary">plus VAT</p>
+            <section class="autoplay slider">
+                <?php 
+                    for($i=1; $i<=10; $i++){ ?>
+                        <div class="col-sm-12">
+                            <img src="images/brand/brand (<?=$i?>).jpeg">
                         </div>
-                        
-                        <?php 
-                            $packages = [
-                                "6 logo designs",
-                                "Individal design",
-                                "Unlimited fixes",
-                                "Design by 2 experienced designs",
-                                "Logo for web & print",
-                                "Vactor & raster formats",
-                                "AI, EPS, PDF, PNG, JPG, PSD",
-                                "Unrestricted Use Rights",
-                                "Free backup service",
-                                "Satisfaction Guarantee"
-                            ]; 
-                        ?>
-                        
-                        <ul>
-                            <?php 
-                                foreach($packages as $package){ ?>
-                                    <li class="py-1">
-                                        <i class="fa-regular fa-circle-check text-success"></i>
-                                        <?=$package?>
-                                    </li>
-                            <?php } ?>
-                        </ul>
-                        <p class="text-center">
-                            <a class="btn btn-success rounded-5 fs-5 fw-bold text-light orderNow" href="#">ORDER NOW</a>
-                        </p>
-                    </div>
-                <?php } ?>
-            </div>
-        </section>
+                <?php } ?> 
+            </section>
+            
+            <section class="professional">
+                <ul class="p-0">
+                    <li>Are you starting a company and need a logo?</li>
+                    <li>Have you been using the same logo for years?</li>
+                    <li>Do you also need the design of your business card, letterhead or a flyer?</li>
+                    <li>We are logo experts and develop logos and business stationery</li>
+                    <li>for all conceivable forms of use.</li>
+                    <li><b>More than 15,000 satisfied customers already trust our agency.</b></li>
+                </ul>
+            </section>
+   
+            <section class="package">
+                <h1 class="text-center mb-4">
+                    <b>OUR PACKAGE</b>
+                </h1>
 
+                <div class="row justify-content-center m-0 mb-4">
+                    <?php for($i=1; $i<=3; $i++){ ?>
+                        <div class="col-md-3 col-sm-12 rounded-5 m-4 thumbnail">
+                            <div class="text-center mb-4">
+                                <p class="fw-bold text-success fs-4">Logo design</p>
+                                <i class="fa-solid fa-euro-sign fa-2x">&nbsp; 149</i>
+                                <p class="text-secondary">plus VAT</p>
+                            </div>
+                            
+                            <?php 
+                                $packages = [
+                                    "6 logo designs",
+                                    "Individal design",
+                                    "Unlimited fixes",
+                                    "Design by 2 experienced designs",
+                                    "Logo for web & print",
+                                    "Vactor & raster formats",
+                                    "AI, EPS, PDF, PNG, JPG, PSD",
+                                    "Unrestricted Use Rights",
+                                    "Free backup service",
+                                    "Satisfaction Guarantee"
+                                ]; 
+                            ?>
+                            
+                            <ul>
+                                <?php 
+                                    foreach($packages as $package){ ?>
+                                        <li class="py-1">
+                                            <i class="fa-regular fa-circle-check text-success"></i>
+                                            <?=$package?>
+                                        </li>
+                                <?php } ?>
+                            </ul>
+                            <p class="text-center">
+                                <a class="btn btn-success rounded-5 fs-5 fw-bold text-light orderNow" href="#">ORDER NOW</a>
+                            </p>
+                        </div>
+                    <?php } ?>
+                </div>
+            </section>
+        </div>
+        
         <section class="process">
             <div class="text-center title">
                 <h4 class="my-3">
@@ -188,7 +190,7 @@
                 <div class="col-md-6 col-sm-12">
                     <div class="m-4">
                         <h4 class="fw-bold text-center">YOUR SATISFACTION <br> GUARANTEE</h4>
-                        <p class="justify">
+                        <p>
                             We're happy when you are too. So that you don't have to take any risks with your
                             purchase, we offer you our satisfaction guarantee.
                             We will revise the design you have chosen until you are completely satisfied. All
@@ -203,30 +205,32 @@
             </div>
         </section>
 
-        <section class="portfolio">
-            <div class="text-center title">
-                <h4 class="my-3">
-                    <span>PORTFOLIO</span>
-                </h4>       
-                <h3>
-                    OUR REFERENCES
-                </h3>     
-            </div>
+        <div class="px-4">
+            <section class="portfolio">
+                <div class="text-center title">
+                    <h4 class="my-3">
+                        <span>PORTFOLIO</span>
+                    </h4>       
+                    <h3>
+                        OUR REFERENCES
+                    </h3>     
+                </div>
 
-            <section class="portfolio2 slider col-sm-12">
-            <?php 
-                for($i=1; $i<=10; $i++){ ?>
-                    <div class="col-sm-12">
-                        <img src="images/brand/brand (<?=$i?>).jpeg">
-                        <p class="text-center fw-bold mt-2">Logo design</p>
-                    </div>
-            <?php } ?> 
-        </section>
+                <section class="portfolio2 slider col-sm-12">
+                <?php 
+                    for($i=1; $i<=10; $i++){ ?>
+                        <div class="col-sm-12">
+                            <img src="images/brand/brand (<?=$i?>).jpeg">
+                            <p class="text-center fw-bold mt-2">Logo design</p>
+                        </div>
+                <?php } ?> 
+            </section>
+        </div>
        
         <section class="startToday">
             <div class="row justify-content-center m-0">
                 <div class="col-md-6 col-sm-12 text-white">
-                    <div style="margin: 70px;">
+                    <div class="m-4">
                         <small>START TODAY</small>
                         <h4 class="fw-bold">Let's create your design</h4>
                         <p>
@@ -244,36 +248,36 @@
         <section class="requestDesign mt-4">
             <div class="row justify-content-center m-0">
                 <div class="col-md-6 col-sm-12 col-xs-12">
-                    <form action="#">
-                       <h3 class="mx-4">
+                    <form action="#" class="mx-4">
+                       <h3 >
                            <b>Request a design</b>
                        </h3>
-                        <div class="row m-3">                  
-                            <div class="form-group col-6">
+                        <div class="row">                  
+                            <div class="form-group col-md-6 col-sm-12">
                                 <label>First name*</label>
                                 <input class="form-control" name="" value="" type="text" placeholder="" readonly>
                             </div>
-                            <div class="form-group col-6">
+                            <div class="form-group col-md-6 col-sm-12">
                                 <label>Surname*</label>
                                 <input class="form-control" name="" value="" type="text" placeholder="" readonly>
                             </div>
-                            <div class="form-group col-6 my-2">
+                            <div class="form-group col-md-6 col-sm-12 my-2">
                                 <label>E-mail*</label>
                                 <input class="form-control" name="" value="" type="email" placeholder="" readonly>
                             </div>
-                            <div class="form-group col-6 my-2">
+                            <div class="form-group col-md-6 col-sm-12 my-2">
                                 <label>Phone*</label>
                                 <input class="form-control" name="" value="" type="text" placeholder="" readonly>
                             </div>
-                            <div class="form-group col-6">
+                            <div class="form-group col-md-6 col-sm-12">
                                 <label>News*</label>
                                 <textarea class="form-control" rows="2" name="" value="" type="text" placeholder="" readonly></textarea>
                             </div>
-                            <div class="form-group col-6">
+                            <div class="form-group col-md-6 col-sm-12">
                                 <label>Here you can attach files</label>
                                 <input class="form-control" style="border: 1px dashed green; padding: 18px 20px;" name="" value="" type="file" placeholder="" readonly>
                             </div>
-                           <div class="form-group col-6 my-4 text-center">
+                           <div class="form-group col-md-6 col-sm-12 my-4 text-center">
                               <a class="btn btn-success rounded-5 fs-6 fw-bold text-light orderNow" href="#">ORDER NOW</a>
                            </div>
                         </div>
