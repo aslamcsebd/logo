@@ -51,13 +51,13 @@
     max-width: 400px;
     margin: 20px auto;
     text-align: center;
-    word-spacing: 5px;   
+    word-spacing: 5px;
 }
 
 .hr-lines:before{
     content:"";
     height: 1.5px;
-    width: 155px;
+    width: 11vw;
     background: red;
     display: block;
     position: absolute;
@@ -68,7 +68,7 @@
 .hr-lines:after{
     content:" ";
     height: 1.5px;
-    width: 175px;
+    width: 13vw;
     background: red;
     display: block;
     position: absolute;

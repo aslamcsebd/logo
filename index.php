@@ -73,7 +73,7 @@
             <?php } ?>
         </section>
 
-        <div class="px-4">
+        <div class="px-3">
             <p class="hr-lines">
                 <span class="float-start">WE DEVELOP YOUR</span> <br>
                 <span class="float-end">PROFESSIONAL LOGO</span>
@@ -205,7 +205,7 @@
             </div>
         </section>
 
-        <div class="px-4">
+        <div class="px-3">
             <section class="portfolio">
                 <div class="text-center title">
                     <h4 class="my-3">
@@ -341,7 +341,7 @@
                 </h1>    
             </div>
 
-            <section class="faq2 row m-4">
+            <section class="faq2 row m-2">
                 <?php 
                     for($i=1; $i<=10; $i++){ ?>
                         <div class="col-md-6 col-sm-12 col-xs-12">

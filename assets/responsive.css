@@ -17,14 +17,17 @@
         margin: 0 auto;
         left: 5%;
         right: 0;        
-        /* text-align: center; */
-        top: 30%; /* Adjust this value to move the positioned div up and down */
-        /* background: rgba(0, 0, 0, 0.8); */
+        top: 30%; 
         font-family: Arial,sans-serif;
         color: #000;
-        width: auto; /* Set the width of the positioned div */
+        width: auto; 
     }
-    .autoplay img { width: 100% !important; }
+
+    .hr-lines:before { width: calc(11vw + 10vw); }
+    .hr-lines:after { width: calc(13vw + 15vw); }
+
+
+    .autoplay img, .portfolio2 img { width: 100% !important; }
     .professional ul { margin: 0em !important;  font-size: 18px !important; }
     .package{ margin-top: 10px !important; }
 
