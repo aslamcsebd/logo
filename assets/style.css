@@ -98,14 +98,14 @@
 .portfolio h4 span{ border-bottom: 2px solid #000; width:100px; }
 .portfolio .title{ margin-bottom: 50px; }
 
-.portfolio2 img{ width: 250px; height: 180px !important; margin: auto;}    
+.portfolio2 img{ width: 300px; height: 180px !important; margin: auto;}    
 
 .satisfaction{padding: 20px 0;}
 
 .startToday .row{background-color: mediumseagreen;}
 
 .satisfaction .row div img{ 
-    width:60% !important;
+    width:70% !important;
 }
 
 .startToday .row div img,

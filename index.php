@@ -226,8 +226,8 @@
                     <div class="tl-2"></div>
                     <div class="tl-1"></div>
                     <div class="tl-2"></div>
-                </div>   
-                <h3 class="mt-0">
+                </div>
+                <h3>
                     THE LOGO DEVELOPMENT
                 </h3>     
             </div>
@@ -282,23 +282,49 @@
 
         <div class="px-3">
             <section class="portfolio">
-                <div class="text-center title">
-                    <h4 class="my-3">
-                        <span>PORTFOLIO</span>
-                    </h4>       
+
+            <style>                
+                .portfolio .tl-1 {
+                    width: 80px;
+                    height: 1.5px;
+                    display: inline-block;
+                    background: gray;                    
+                    position: relative;
+                    top: -18px;
+                }
+                .portfolio .tl-2 {
+                    display: inline-block;
+                    height: 7px;
+                    margin: 0 -12px;
+                    position: relative;
+                    top: -15px;
+                    width: 7px;
+                    border: 4px solid gray;
+                    border-radius: 50px;
+                }
+            </style>
+            <div class="text-center">              
+                <div class="text-center">
+                    <div class="hr-lines">
+                        <div>PORTFOLIO</div>
+                        <div class="tl-2"></div>
+                        <div class="tl-1"></div>
+                        <div class="tl-2"></div>
+                    </div>
                     <h3>
                         OUR REFERENCES
                     </h3>     
                 </div>
 
-                <section class="portfolio2 slider col-sm-12">
-                <?php 
-                    for($i=1; $i<=10; $i++){ ?>
-                        <div class="col-sm-12">
-                            <img src="images/brand/brand (<?=$i?>).jpeg">
-                            <p class="text-center fw-bold mt-2">Logo design</p>
-                        </div>
-                <?php } ?> 
+                <section class="portfolio2 slider">
+                    <?php 
+                        for($i=1; $i<=10; $i++){ ?>
+                            <div class="col-md-4 col-sm-12">
+                                <img src="images/brand/brand (<?=$i?>).jpeg">
+                                <p class="text-center fs-4 fw-bold mt-2">Logo design</p>
+                            </div>
+                    <?php } ?> 
+                </section>
             </section>
         </div>
        
@@ -307,7 +333,7 @@
                 <div class="col-md-6 col-sm-12 text-white">
                     <div class="m-4">
                         <small>START TODAY</small>
-                        <h4 class="fw-bold">Let's create your design</h4>
+                        <h4 class="fs-2 fw-bold">Let's create your design</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis doloremque quos sint iure, voluptas natus ratione dolore quaerat enim voluptates doloribus in obcaecati assumenda? Praesentium doloribus aut quod excepturi ipsum?
                         </p>
@@ -381,17 +407,17 @@
         </section>
       
         <section class="business">
-            <div class="text-center title">
-                <h4 class="my-3">
-                    BUSINESS CARDS, LETTERHEAD, FLYERS, <br>
-                    LEAFLETS AND BROCHURES FROM PROFESSIONALS
-                </h4>     
-            </div>
             <div class="row justify-content-center m-0">
                 <div class="col-md-6 col-sm-12">
                     <img src="images/startToday.png" alt="">
                 </div>
                 <div class="col-md-6 col-sm-12">
+                    <div class="text-center title">
+                        <h4 class="my-3">
+                            BUSINESS CARDS, LETTERHEAD, FLYERS, <br>
+                            LEAFLETS AND BROCHURES FROM PROFESSIONALS
+                        </h4>     
+                    </div>
                     <div class="m-4">
                         <p>
                             Would you like a business card, letterhead, flyer, leaflet or brochure to be
@@ -410,10 +436,33 @@
         </section>
       
         <section class="faq">
-            <div class="text-center title">
-                <h1 class="my-3">
-                    <span>FAQ</span>
-                </h1>    
+        <style>                
+                .faq .tl-1 {
+                    width: 120px;
+                    height: 1.5px;
+                    display: inline-block;
+                    background: gray;                    
+                    position: relative;
+                    top: -29px;
+                }
+                .faq .tl-2 {
+                    display: inline-block;
+                    height: 7px;
+                    margin: 0 -12px;
+                    position: relative;
+                    top: -25px;
+                    width: 7px;
+                    border: 4px solid gray;
+                    border-radius: 50px;
+                }
+            </style>             
+            <div class="text-center">
+                <div class="hr-lines">
+                    <div class="fs-1 fw-bold">FAQ</div>
+                    <div class="tl-2"></div>
+                    <div class="tl-1"></div>
+                    <div class="tl-2"></div>
+                </div>
             </div>
 
             <section class="faq2 row m-2">
@@ -421,7 +470,7 @@
                     for($i=1; $i<=10; $i++){ ?>
                         <div class="col-md-6 col-sm-12 col-xs-12">
                             <h5>
-                                <i class="fa-solid fa-circle-dot"></i>&nbsp;
+                                <i class="fa-solid fa-circle-dot text-primary"></i>&nbsp;
                                 What is the exact flow of the design process?
                             </h5>
                             <p>
@@ -444,20 +493,20 @@
                 <small class="text-secondary">Sample text. Click to select the text box. Click again or double <br> click to start editing the text.</small>
            
             </div>
-            <div class="row justify-content-center m-0 py-4">
-                <div class="col-md-2 col-xs-12 text-center">
+            <div class="row justify-content-center m-0 py-4 text-white">
+                <div class="col-md-2 col-xs-12 text-center ">
                     <i class="fa-solid fa-location-dot fa-2x"></i>
-                    <h6 class="mt-2 mb-3 fs-5 text-success">ADDRESS</h6>
+                    <h6 class="mt-2 mb-3 fs-5">ADDRESS</h6>
                     <p>27 13 Lowe Haven</p>
                 </div>
                 <div class="col-md-2 col-xs-12 text-center">
                     <i class="fa-solid fa-mobile-screen fa-2x"></i>
-                    <h6 class="mt-2 mb-3 fs-5 text-success">PHONE</h6>
+                    <h6 class="mt-2 mb-3 fs-5">PHONE</h6>
                     <p>111 343 43 43</p>
                 </div>
                 <div class="col-md-2 col-xs-12 text-center">
                     <i class="fa-regular fa-envelope fa-2x"></i>
-                    <h6 class="mt-2 mb-3 fs-5 text-success">EMAIL</h6>
+                    <h6 class="mt-2 mb-3 fs-5">EMAIL</h6>
                     <p>business@info.com</p>
                 </div>
             </div>            
