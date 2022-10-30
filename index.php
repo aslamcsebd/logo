@@ -71,27 +71,7 @@
                     </div>
             <?php } ?>
         </section>
-            <style>                
-                .develop .tl-1 {
-                    width: 60px;
-                    height: 1.5px;
-                    display: inline-block;
-                    background: gray;                    
-                    position: relative;
-                    top: -8px;
-                }
-                .develop .tl-2 {
-                    display: inline-block;
-                    height: 7px;
-                    margin: 0 -12px;
-                    position: relative;
-                    top: -5px;
-                    width: 7px;
-                    border: 4px solid gray;
-                    border-radius: 50px;
-                }
-            </style>         
-
+                   
         <div class="px-3">
             <div class="hr-lines develop">
                 <span class="float-start">WE DEVELOP YOUR</span> 
@@ -125,27 +105,6 @@
             </section>
    
             <section class="package">
-            <style>                
-                .package .tl-1 {
-                    width: 100px;
-                    height: 1.5px;
-                    display: inline-block;
-                    background: gray;                    
-                    position: relative;
-                    top: -18px;
-                }
-                .package .tl-2 {
-                    display: inline-block;
-                    height: 7px;
-                    margin: 0 -12px;
-                    position: relative;
-                    top: -15px;
-                    width: 7px;
-                    border: 4px solid gray;
-                    border-radius: 50px;
-                }
-            </style>
-
                 <div class="hr-lines">
                     <div>
                         <b lass="mb-0">OUR PACKAGE</b>
@@ -200,26 +159,6 @@
         </div>
         
         <section class="process">
-            <style>                
-                .process .tl-1 {
-                    width: 150px;
-                    height: 1.5px;
-                    display: inline-block;
-                    background: gray;                    
-                    position: relative;
-                    top: -18px;
-                }
-                .process .tl-2 {
-                    display: inline-block;
-                    height: 7px;
-                    margin: 0 -12px;
-                    position: relative;
-                    top: -15px;
-                    width: 7px;
-                    border: 4px solid gray;
-                    border-radius: 50px;
-                }
-            </style>
             <div class="text-center title">
                 <div class="hr-lines">
                     <div>THE DESIGN PROCESS</div>
@@ -227,7 +166,7 @@
                     <div class="tl-1"></div>
                     <div class="tl-2"></div>
                 </div>
-                <h3>
+                <h3 class="mt15">
                     THE LOGO DEVELOPMENT
                 </h3>     
             </div>
@@ -281,29 +220,7 @@
         </section>
 
         <div class="px-3">
-            <section class="portfolio">
-
-            <style>                
-                .portfolio .tl-1 {
-                    width: 80px;
-                    height: 1.5px;
-                    display: inline-block;
-                    background: gray;                    
-                    position: relative;
-                    top: -18px;
-                }
-                .portfolio .tl-2 {
-                    display: inline-block;
-                    height: 7px;
-                    margin: 0 -12px;
-                    position: relative;
-                    top: -15px;
-                    width: 7px;
-                    border: 4px solid gray;
-                    border-radius: 50px;
-                }
-            </style>
-            <div class="text-center">              
+            <section class="portfolio">          
                 <div class="text-center">
                     <div class="hr-lines">
                         <div>PORTFOLIO</div>
@@ -311,12 +228,12 @@
                         <div class="tl-1"></div>
                         <div class="tl-2"></div>
                     </div>
-                    <h3>
+                    <h3 class="mt15">
                         OUR REFERENCES
                     </h3>     
                 </div>
 
-                <section class="portfolio2 slider">
+                <section class="portfolio2 slider mt-4">
                     <?php 
                         for($i=1; $i<=10; $i++){ ?>
                             <div class="col-md-4 col-sm-12">
@@ -436,26 +353,6 @@
         </section>
       
         <section class="faq">
-        <style>                
-                .faq .tl-1 {
-                    width: 120px;
-                    height: 1.5px;
-                    display: inline-block;
-                    background: gray;                    
-                    position: relative;
-                    top: -29px;
-                }
-                .faq .tl-2 {
-                    display: inline-block;
-                    height: 7px;
-                    margin: 0 -12px;
-                    position: relative;
-                    top: -25px;
-                    width: 7px;
-                    border: 4px solid gray;
-                    border-radius: 50px;
-                }
-            </style>             
             <div class="text-center">
                 <div class="hr-lines">
                     <div class="fs-1 fw-bold">FAQ</div>

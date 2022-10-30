@@ -126,3 +126,99 @@
 .faq h1 span{ border-bottom: 2px solid #000; }
 
 .contactUs .row{background-color: limegreen;}
+.mt15{margin-top: -15px;}
+   
+.develop .tl-1 {
+    width: 75px;
+    height: 1.5px;
+    display: inline-block;
+    background: gray;                    
+    position: relative;
+    top: -8px;
+}
+.develop .tl-2 {
+    display: inline-block;
+    height: 7px;
+    margin: 0 -12px;
+    position: relative;
+    top: -5px;
+    width: 7px;
+    border: 4px solid gray;
+    border-radius: 50px;
+}
+
+.package .tl-1 {
+    width: 100px;
+    height: 1.5px;
+    display: inline-block;
+    background: gray;                    
+    position: relative;
+    top: -18px;
+}
+.package .tl-2 {
+    display: inline-block;
+    height: 7px;
+    margin: 0 -12px;
+    position: relative;
+    top: -15px;
+    width: 7px;
+    border: 4px solid gray;
+    border-radius: 50px;
+}
+
+.process .tl-1 {
+    width: 150px;
+    height: 1.5px;
+    display: inline-block;
+    background: gray;                    
+    position: relative;
+    top: -18px;
+}
+.process .tl-2 {
+    display: inline-block;
+    height: 7px;
+    margin: 0 -12px;
+    position: relative;
+    top: -15px;
+    width: 7px;
+    border: 4px solid gray;
+    border-radius: 50px;
+}
+
+.portfolio .tl-1 {
+    width: 80px;
+    height: 1.5px;
+    display: inline-block;
+    background: gray;                    
+    position: relative;
+    top: -18px;
+}
+.portfolio .tl-2 {
+    display: inline-block;
+    height: 7px;
+    margin: 0 -12px;
+    position: relative;
+    top: -15px;
+    width: 7px;
+    border: 4px solid gray;
+    border-radius: 50px;
+}
+
+.faq .tl-1 {
+    width: 120px;
+    height: 1.5px;
+    display: inline-block;
+    background: gray;                    
+    position: relative;
+    top: -29px;
+}
+.faq .tl-2 {
+    display: inline-block;
+    height: 7px;
+    margin: 0 -12px;
+    position: relative;
+    top: -25px;
+    width: 7px;
+    border: 4px solid gray;
+    border-radius: 50px;
+}
