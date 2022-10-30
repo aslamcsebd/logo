@@ -51,13 +51,13 @@
 .hr-lines{
     font-size: 1.5em;
     position: relative;
-    max-width: 400px;
-    margin: 20px auto;
+    max-width: 320px;
+    margin: 0px auto;
     text-align: center;
     word-spacing: 5px;
 }
 
-.hr-lines:before{
+/* .hr-lines:before{
     content:"";
     height: 1.5px;
     width: 11vw;
@@ -77,7 +77,7 @@
     position: absolute;
     top: 50%;
     right: 0;
-}
+} */
 
 /* professional */
 .professional ul li{ list-style: none; }

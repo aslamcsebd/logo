@@ -71,14 +71,39 @@
                     </div>
             <?php } ?>
         </section>
+            <style>                
+                .develop .tl-1 {
+                    width: 60px;
+                    height: 1.5px;
+                    display: inline-block;
+                    background: gray;                    
+                    position: relative;
+                    top: -8px;
+                }
+                .develop .tl-2 {
+                    display: inline-block;
+                    height: 7px;
+                    margin: 0 -12px;
+                    position: relative;
+                    top: -5px;
+                    width: 7px;
+                    border: 4px solid gray;
+                    border-radius: 50px;
+                }
+            </style>         
 
         <div class="px-3">
-            <p class="hr-lines">
-                <span class="float-start">WE DEVELOP YOUR</span> <br>
+            <div class="hr-lines develop">
+                <span class="float-start">WE DEVELOP YOUR</span> 
+                <div class="tl-1"></div>
+                <div class="tl-2"></div>
+            </div>
+            <div class="hr-lines develop">                
+                <div class="tl-2"></div>
+                <div class="tl-1"></div>
                 <span class="float-end">PROFESSIONAL LOGO</span>
-            </p>
-            <br>
-        
+            </div>
+            <br>        
             <section class="autoplay slider">
                 <?php 
                     for($i=1; $i<=10; $i++){ ?>
@@ -100,43 +125,71 @@
             </section>
    
             <section class="package">
-                <h1 class="text-center mb-4">
-                    <b>OUR PACKAGE</b>
-                </h1>
+            <style>                
+                .package .tl-1 {
+                    width: 100px;
+                    height: 1.5px;
+                    display: inline-block;
+                    background: gray;                    
+                    position: relative;
+                    top: -18px;
+                }
+                .package .tl-2 {
+                    display: inline-block;
+                    height: 7px;
+                    margin: 0 -12px;
+                    position: relative;
+                    top: -15px;
+                    width: 7px;
+                    border: 4px solid gray;
+                    border-radius: 50px;
+                }
+            </style>
+
+                <div class="hr-lines">
+                    <div>
+                        <b lass="mb-0">OUR PACKAGE</b>
+                    </div>
+                    <div class="tl-2"></div>
+                    <div class="tl-1"></div>
+                    <div class="tl-2"></div>
+                </div>               
 
                 <div class="row justify-content-center m-0 mb-4">
                     <?php for($i=1; $i<=3; $i++){ ?>
-                        <div class="col-md-3 col-sm-12 rounded-5 m-4 thumbnail">
-                            <div class="text-center mb-4">
-                                <p class="fw-bold text-success fs-4">Logo design</p>
-                                <i class="fa-solid fa-euro-sign fa-2x">&nbsp; 149</i>
-                                <p class="text-secondary">plus VAT</p>
-                            </div>
-                            
-                            <?php 
-                                $packages = [
-                                    "6 logo designs",
-                                    "Individal design",
-                                    "Unlimited fixes",
-                                    "Design by 2 experienced designs",
-                                    "Logo for web & print",
-                                    "Vactor & raster formats",
-                                    "AI, EPS, PDF, PNG, JPG, PSD",
-                                    "Unrestricted Use Rights",
-                                    "Free backup service",
-                                    "Satisfaction Guarantee"
-                                ]; 
-                            ?>
-                            
-                            <ul>
+                        <div class="col-md-3 col-sm-12 mx-4">
+                            <div class="rounded-5 my-4 thumbnail">
+                                <div class="text-center mb-4">
+                                    <p class="fw-bold text-success fs-4">Logo design</p>
+                                    <i class="fa-solid fa-euro-sign fa-2x">&nbsp; 149</i>
+                                    <p class="text-secondary">plus VAT</p>
+                                </div>
+                                
                                 <?php 
-                                    foreach($packages as $package){ ?>
-                                        <li class="py-1">
-                                            <i class="fa-regular fa-circle-check text-success"></i>
-                                            <?=$package?>
-                                        </li>
-                                <?php } ?>
-                            </ul>
+                                    $packages = [
+                                        "6 logo designs",
+                                        "Individal design",
+                                        "Unlimited fixes",
+                                        "Design by 2 experienced designs",
+                                        "Logo for web & print",
+                                        "Vactor & raster formats",
+                                        "AI, EPS, PDF, PNG, JPG, PSD",
+                                        "Unrestricted Use Rights",
+                                        "Free backup service",
+                                        "Satisfaction Guarantee"
+                                    ]; 
+                                ?>
+                                
+                                <ul>
+                                    <?php 
+                                        foreach($packages as $package){ ?>
+                                            <li class="py-1">
+                                                <i class="fa-regular fa-circle-check text-success"></i>
+                                                <?=$package?>
+                                            </li>
+                                    <?php } ?>
+                                </ul>
+                            </div>
                             <p class="text-center">
                                 <a class="btn btn-success rounded-5 fs-5 fw-bold text-light orderNow" href="#">ORDER NOW</a>
                             </p>
@@ -147,11 +200,34 @@
         </div>
         
         <section class="process">
+            <style>                
+                .process .tl-1 {
+                    width: 150px;
+                    height: 1.5px;
+                    display: inline-block;
+                    background: gray;                    
+                    position: relative;
+                    top: -18px;
+                }
+                .process .tl-2 {
+                    display: inline-block;
+                    height: 7px;
+                    margin: 0 -12px;
+                    position: relative;
+                    top: -15px;
+                    width: 7px;
+                    border: 4px solid gray;
+                    border-radius: 50px;
+                }
+            </style>
             <div class="text-center title">
-                <h4 class="my-3">
-                    <span>THE DESIGN PROCESS</span>
-                </h4>       
-                <h3>
+                <div class="hr-lines">
+                    <div>THE DESIGN PROCESS</div>
+                    <div class="tl-2"></div>
+                    <div class="tl-1"></div>
+                    <div class="tl-2"></div>
+                </div>   
+                <h3 class="mt-0">
                     THE LOGO DEVELOPMENT
                 </h3>     
             </div>
