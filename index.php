@@ -24,8 +24,7 @@
         <div class="box">
             <img src="images/home.jpeg" alt="" width="100%" height="500">       
             <div class="text">
-                <h2 class="fw-bold">Logo design by experts</h2>
-
+                <h1 class="fw-bold">Logo design by experts</h1>
                 <table class="my-4">
                     <tbody>
                     <tr>

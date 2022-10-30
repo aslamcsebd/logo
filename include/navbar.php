@@ -15,8 +15,8 @@
 
 <nav class="navbar navbar-expand-lg py-2">   
    <div class="container-fluid">
-      <a class="navbar-brand ms-4 " href="#">
-         <img class="rounded-2" src="images/logo.jpg" eight="40" width="130">
+      <a class="navbar-brand ms-4" href="#">
+         <img class="rounded-2" src="images/logo.jpg" width="130">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -32,11 +32,9 @@
             <li class="nav-item">
                <a class="btn btn-light btn-lg" href="#">About us</a>
             </li>    
-         </ul>
-        
-         <a class="btn btn-primary shopping me-4" href="#">
-            <i class="fa-solid fa-cart-shopping fs-5"></i>
-            ORDER NOW
+         </ul>        
+         <a class="shopping me-4 mb-0" href="#">
+            <img src="images/orderNow.png">
          </a>        
       </div>
    </div>

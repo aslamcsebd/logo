@@ -4,8 +4,11 @@
 .topNav .rounded-circle, .topNav .rounded-5{ background-color: orange; }
 
 .navbar{ background-color: #F6F6F6;}
-.navbar-collapse .nav-item a{margin: 0 20px; padding: 0.2rem 0.5rem; font-size: 20px; text-transform: uppercase; font-weight: bold; box-shadow: 1px 1px 10px 3px grey;}
+.navbar-collapse .nav-item a{margin: 0 20px; padding: 0.2rem 0.5rem; font-size: 20px; text-transform: uppercase; font-weight: bold; border: 2px solid darkgray; box-shadow: 7px 7px 5px grey;}
 .navbar-collapse .nav-item{ margin: 5px !important;}
+
+.shopping img{ width: 170px;}
+.form-check.form-check-inline{font-size: 1.25rem;}
 
 .box{
     position: relative;    
