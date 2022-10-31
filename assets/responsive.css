@@ -18,11 +18,13 @@
         margin: 0 auto;
         left: 5%;
         right: 0;        
-        top: 30%; 
+        top: 15%; 
         font-family: Arial,sans-serif;
         color: #000;
         width: auto; 
     }
+    .box img{opacity: -1; height: 250px;}
+    .box tbody{display: grid;}
 
     .hr-lines:before { width: calc(11vw + 10vw); }
     .hr-lines:after { width: calc(13vw + 15vw); }
