@@ -24,7 +24,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
          <ul class="navbar-nav m-auto mb-lg-0">
             <li class="nav-item">
-               <a class="btn btn-light btn-lg" href="#">Logo design</a>
+               <a class="btn btn-light btn-lg" href="logo-design.php" target="_blank">Logo design</a>
             </li>    
             <li class="nav-item">
                <a class="btn btn-light btn-lg" href="#">Service</a>
