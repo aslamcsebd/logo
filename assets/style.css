@@ -225,3 +225,10 @@
 
 
 /* logo-design page */
+.pagination .page-item{ margin: 0px 6px; }
+.pagination .page-item a{border: unset; border-radius: 5px; background-color: lightgrey; color: #000; font-weight: bold; padding: 10px 10px;}
+.pagination .page-item.active a{ background-color: chartreuse; color: #fff; }
+
+.service small{color: limegreen; font-weight: bold; font-size: 10px;}
+.service .form-check-input{background-color: limegreen; border: unset;}
+.references h2{text-decoration: underline; text-decoration-color: gray; text-underline-offset: 1rem;}

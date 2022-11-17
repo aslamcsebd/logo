@@ -21,8 +21,9 @@
         <!-- navbar -->
         <?php include 'include/navbar.php';?>
 
-        <section class="develop-logo">    
+        <section class="develop-logo">                
             <div class="m-5 fw-bold">
+                <h3 class="text-center my-4">We develop your professional logo</h3>
                 <p>
                     Are you starting a company and need a logo? Have you been using the same logo for years? Do you also need the design of your business card, letterhead or a flyer?
                 </p>
@@ -34,26 +35,20 @@
 
         <section class="references">
             <div class="mt-4">
-                <h2 class="text-center">OUR REFERENCES</h2>
+                <h2 class="text-center mb-5">OUR REFERENCES</h2>
             </div>
 
             <?php 
                 for($j=1; $j<=4; $j++){ ?>            
-                    <div class="row row-cols-5 justify-content-center m-0 my-4">
+                    <div class="row row-cols-6 justify-content-center m-0 my-3">
                         <?php 
-                            for($i=1; $i<=5; $i++){ ?>
-                                <div class="col-auto col-xs-12">
+                            for($i=1; $i<=6; $i++){ ?>
+                                <div class="col-auto my-2">
                                     <img src="images/brand/brand (<?=$i?>).jpeg" style="height:130px; width:130px;">
                                 </div>
                         <?php } ?>
                     </div>
-            <?php } ?>
-
-            <style>
-                .pagination .page-item{ margin: 0px 6px; }
-                .pagination .page-item a{border: unset; border-radius: 5px; background-color: lightgrey; color: #000; font-weight: bold; padding: 10px 10px;}
-                .pagination .page-item.active a{ background-color: chartreuse; color: #fff; }
-            </style>
+            <?php } ?>          
 
             <nav aria-label="Page navigation example">
                 <ul class="pagination justify-content-center">
@@ -123,12 +118,7 @@
                     </div>
                 <?php } ?>
             </div>
-        </section>
-
-        <style>
-            .service small{color: limegreen; font-weight: bold; font-size: 10px;}
-            .service .form-check-input{background-color: limegreen; border: unset;}
-        </style>
+        </section>       
 
         <section class="service m-5">
             <div class="m-4">
@@ -169,8 +159,7 @@
                 <h1>
                     <span class="fw-bold">Contact Us</span>
                 </h1>    
-                <small class="text-secondary">Sample text. Click to select the text box. Click again or double <br> click to start editing the text.</small>
-           
+                <small class="text-secondary">Sample text. Click to select the text box. Click again or double <br> click to start editing the text.</small>           
             </div>
             <div class="row justify-content-center m-0 py-4 text-white">
                 <div class="col-md-2 col-xs-12 text-center ">

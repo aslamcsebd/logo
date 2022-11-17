@@ -38,4 +38,11 @@
         width:80% !important;
     }
     .requestDesign form.mx-4{margin: unset !important;}
+    
+    /* logo-design page */
+    .develop-logo div{ margin: 2rem 1rem !important; }
+    .service {margin: 0.5rem !important;}
+
+   
+
 }
