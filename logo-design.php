@@ -49,6 +49,12 @@
                     </div>
             <?php } ?>
 
+            <style>
+                .pagination .page-item{ margin: 0px 6px; }
+                .pagination .page-item a{border: unset; border-radius: 5px; background-color: lightgrey; color: #000; font-weight: bold; padding: 10px 10px;}
+                .pagination .page-item.active a{ background-color: chartreuse; color: #fff; }
+            </style>
+
             <nav aria-label="Page navigation example">
                 <ul class="pagination justify-content-center">
                     <li class="page-item disabled">
@@ -64,89 +70,96 @@
                         <a class="page-link" href="#">3</a>
                     </li>
                     <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
+                        <a class="page-link px-3" href="#">Next</a>
                     </li>
                 </ul>
             </nav>
         </section>
 
-        <div class="px-3 mt-4">   
-            <section class="package">
-                <div class="text-center">
-                    <b class="text-success">fixed prices without additional costs</b>
-                    <h1>OUR OFFERS</h1>
-                </div>  
+        <section class="offer my-5">
+            <div class="text-center">
+                <b class="text-success">fixed prices without additional costs</b>
+                <h2>OUR OFFERS</h2>
+            </div>  
 
-                <div class="row justify-content-center m-0 mb-4">
-                    <?php for($i=1; $i<=3; $i++){ ?>
-                        <div class="col-md-3 col-sm-12 mx-4">
-                            <div class="rounded-5 my-4 thumbnail">
-                                <div class="text-center mb-4">
-                                    <p class="fw-bold text-success fs-4">Logo design</p>
-                                    <i class="fa-solid fa-euro-sign fa-2x">&nbsp; 149</i>
-                                    <p class="text-secondary">plus VAT</p>
-                                </div>
-                                
-                                <?php 
-                                    $packages = [
-                                        "6 logo designs",
-                                        "Individal design",
-                                        "Unlimited fixes",
-                                        "Design by 2 experienced designs",
-                                        "Logo for web & print",
-                                        "Vactor & raster formats",
-                                        "AI, EPS, PDF, PNG, JPG, PSD",
-                                        "Unrestricted Use Rights",
-                                        "Free backup service",
-                                        "Satisfaction Guarantee"
-                                    ]; 
-                                ?>
-                                
-                                <ul>
-                                    <?php 
-                                        foreach($packages as $package){ ?>
-                                            <li class="py-1">
-                                                <i class="fa-regular fa-circle-check text-success"></i>
-                                                <?=$package?>
-                                            </li>
-                                    <?php } ?>
-                                </ul>
+            <div class="row justify-content-center m-0 mb-4">
+                <?php for($i=1; $i<=3; $i++){ ?>
+                    <div class="col-md-3 col-sm-12 mx-4">
+                        <div class="rounded-5 my-4 thumbnail">
+                            <div class="text-center mb-4">
+                                <p class="fw-bold text-success fs-4">Logo design</p>
+                                <i class="fa-solid fa-euro-sign fa-2x">&nbsp; 149</i>
+                                <p class="text-secondary">plus VAT</p>
                             </div>
-                            <p class="text-center">
-                                <a class="btn btn-success rounded-5 fs-5 fw-bold text-light orderNow" href="#">ORDER NOW</a>
-                            </p>
+                            
+                            <?php 
+                                $packages = [
+                                    "6 logo designs",
+                                    "Individal design",
+                                    "Unlimited fixes",
+                                    "Design by 2 experienced designs",
+                                    "Logo for web & print",
+                                    "Vactor & raster formats",
+                                    "AI, EPS, PDF, PNG, JPG, PSD",
+                                    "Unrestricted Use Rights",
+                                    "Free backup service",
+                                    "Satisfaction Guarantee"
+                                ]; 
+                            ?>
+                            
+                            <ul>
+                                <?php 
+                                    foreach($packages as $package){ ?>
+                                        <li class="py-1">
+                                            <i class="fa-regular fa-circle-check text-success"></i>
+                                            <?=$package?>
+                                        </li>
+                                <?php } ?>
+                            </ul>
                         </div>
-                    <?php } ?>
-                </div>
-            </section>
-        </div>
-
-        <section class="requestDesign mt-4">
-            <div class="m-4">
-                <small class="text-success">THAT'S WHAT YOU GET</sma>
-                <p class="fs-3">Included Services</p>
+                        <p class="text-center">
+                            <a class="btn btn-success rounded-5 fs-5 fw-bold text-light orderNow" href="#">ORDER NOW</a>
+                        </p>
+                    </div>
+                <?php } ?>
             </div>
+        </section>
 
+        <style>
+            .service small{color: limegreen; font-weight: bold; font-size: 10px;}
+            .service .form-check-input{background-color: limegreen; border: unset;}
+        </style>
 
+        <section class="service m-5">
+            <div class="m-4">
+                <small>THAT'S WHAT YOU GET</small>
+                <p class="fs-4 fw-bold">Included Services</p>
+            </div>
+            <?php 
+                $services = [
+                    "First drafts in approx. 3 working days",
+                    "Can be used universally (website, print, etc.)",
+                    "Express options",
+                    "Delivery of printable data",
+                    "Unlimited fixes",
+                    "High resolution vector formats: ai, eps, pdf",
+                    "Unrestricted Use Rights",
+                    "Raster formats in 300dpi resolution: jpg, png, psd",
+                    "Design development by experienced graphic designers",
+                    "100% satisfaction guarantee"
+                ]; 
+            ?>
             <div class="row justify-content-center m-0">
                 <?php 
-                    for($i=1; $i<=4; $i++){ ?>
-                        <div class="col-md-6 col-sm-12 col-xs-12 px-4">
-                            <div class="mx-3">
-                                    <div class="form-check">
-                                    <input class="form-check-input bg-success fs-4" type="checkbox" checked disabled>
-                                    <label class="text-success fs-5">Professional design</label>
-                                    </div>
-                                    <div class="form-check my-2">
-                                    <input class="form-check-input bg-success fs-4" type="checkbox" checked disabled>
-                                    <label class="text-success fs-5">Experienced graphic design</label>
-                                    </div>
-                                    <div class="form-check">
-                                    <input class="form-check-input bg-success fs-4" type="checkbox" checked disabled>
-                                    <label class="text-success fs-5">Cheap prices</label>
-                                    </div>
+                foreach($services as $service){ ?>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="px-3">
+                            <div class="form-check my-2">
+                                <input class="form-check-input fs-5" type="checkbox" checked>
+                                <label class="fs-6 fw-bold my-0"> <?=$service?></label>
                             </div>
                         </div>
+                    </div>
                 <?php } ?>
             </div>
         </section>

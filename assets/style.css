@@ -84,8 +84,8 @@
 .professional ul{ margin: 2em; font-size: 20px; font-weight: 400;}
 
 .package h1 b{ border-bottom: 2px solid #000; width:50px; }
-.package ul li{ list-style: none; }    
-.package .thumbnail {
+.package ul li, .offer ul li{ list-style: none; }    
+.package .thumbnail, .offer .thumbnail{
     padding: 10px;
     -webkit-box-shadow: 0 0 5px 2px rgb(0 0 0 / 50%);
     box-shadow: 0 0 5px 2px rgb(0 0 0 / 50%);
