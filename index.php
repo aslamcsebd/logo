@@ -67,7 +67,7 @@
             <?php 
                 for($i=1; $i<=10; $i++){ ?>
                     <div>
-                        <img src="images/brand/brand (<?=$i?>).jpeg">
+                        <img class="rounded-1" src="images/brand/brand (<?=$i?>).jpeg">
                     </div>
             <?php } ?>
         </section>
@@ -237,7 +237,7 @@
                     <?php 
                         for($i=1; $i<=10; $i++){ ?>
                             <div class="col-md-4 col-sm-12">
-                                <img src="images/brand/brand (<?=$i?>).jpeg">
+                                <img class="rounded-2" src="images/brand/brand (<?=$i?>).jpeg">
                                 <p class="text-center fs-4 fw-bold mt-2">Logo design</p>
                             </div>
                     <?php } ?> 

@@ -15,7 +15,7 @@
 
 <nav class="navbar navbar-expand-lg py-2">   
    <div class="container-fluid">
-      <a class="navbar-brand ms-4" href="#">
+      <a class="navbar-brand ms-4" href="index.php">
          <img class="rounded-2" src="images/logo.jpg" width="130">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

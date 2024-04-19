@@ -44,7 +44,7 @@
                         <?php 
                             for($i=1; $i<=6; $i++){ ?>
                                 <div class="col-auto my-2">
-                                    <img src="images/brand/brand (<?=$i?>).jpeg" style="height:130px; width:130px;">
+                                    <img class="rounded-2" src="images/brand/brand (<?=$i?>).jpeg" style="height:130px; width:130px;">
                                 </div>
                         <?php } ?>
                     </div>
